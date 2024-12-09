@@ -1,0 +1,82 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+  }
+  
+  .calculator {
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+  }
+  
+  .display {
+    background-color: #333;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: #000;
+    margin: auto;
+   
+  }
+  
+  .button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 100px;
+  }
+  
+  .number {
+    background-color: #444;
+  }
+  
+  .number.zero {
+    grid-column: span 2;
+  }
+  
+  .operator {
+    background-color: #ff9500;
+  }
+  
+  .function {
+    background-color: #a5a5a5;
+  }
+  
+  .button:active {
+    opacity: 0.7;
+  }
+  .image-button {
+    position: relative;
+    padding: 0;
+    background-color: #5e5d5d;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+  }
+  
+  .image-button img {
+    height: 60px;
+    border-radius: 100px; /* Make the image circular if desired */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for style */
+  }
+   
