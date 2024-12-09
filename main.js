@@ -118,6 +118,9 @@ function calculate() {
     updateDisplay();
   }
 }
+document.querySelector('.image-button').addEventListener('click', () => {
+  alert('Image button clicked!');
+});
 
 
 
